@@ -16,6 +16,10 @@ LangChain 공식 문서를 기반으로 질문에 답변하는 RAG(Retrieval-Aug
 
 LangChain 공식 문서를 크롤링·임베딩하여 Pinecone에 저장하고, 사용자 질문에 대해 관련 문서를 검색한 뒤 GPT 모델로 답변을 생성합니다. 멀티턴 대화에서도 이전 컨텍스트를 반영하는 `history_aware_retriever`를 적용했습니다.
 
+
+![Logo](https://github.com/emarco177/documentation-helper/blob/main/static/banner.gif)
+
+
 ## 기술 스택
 
 | 구분 | 기술 |
