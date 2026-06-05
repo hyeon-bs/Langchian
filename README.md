@@ -1,23 +1,31 @@
-# Langchian
-유데미 랭체인 과제 모음
+# 🦜 LangChain Projects
 
-#### 🧊 ice_breaker
-링크드인과 트위터 프로필을 분석해 개인화된 아이스 브레이커를 생성하는 실생활 AI 에이전트 애플리케이션이다.
+LangChain을 활용한 다양한 AI 애플리케이션 실습 모음입니다.
 
-#### 🔍 react-langchain
-랭체인의 리액트 에이전트 프레임워크 내부를 살펴봄.
+## 📁 프로젝트 목록
 
-#### 📑 vectorstor-in-memory
-Faiss를 이용하여 pdf 문서로 로컬 백터 스토어를 사용하는 방법.
+| 프로젝트 | 설명 | 주요 기술 |
+|----------|------|-----------|
+| [ice_breaker](./ice_breaker/) | LinkedIn/Twitter 프로필 기반 아이스브레이킹 정보 생성 | Flask, LangChain Agent, Tavily, Pydantic |
+| [documentation_helper](./documentation-helper/) | LangChain 공식 문서 RAG 챗봇 | Streamlit, Pinecone, History-Aware Retriever |
+| [code_interpreter](./code-interpreter/) | 자연어 → Python 코드 실행 / CSV 분석 멀티 에이전트 | PythonREPLTool, CSV Agent, ReAct |
+| [intro_to_vector_dbs](./intro-to-vector-dbs/) | Pinecone 벡터 DB 기반 RAG 기초 실습 | Pinecone, OpenAI Embeddings, LCEL |
+| [vectorstor-in-memory](./vectorstor-in-memory/) | FAISS 인메모리 벡터 DB 기반 PDF RAG | FAISS, PyPDF, OpenAI Embeddings |
 
-#### 💾 intro-to-vector-dbs
-데이터를 청크로 나눈 후 임베딩해서 백터스토어에 저장하는 방법. Pinecone 사용.
+## 🛠️ 공통 사전 준비
 
-#### 💬 documentation-helper
-공식 문서를 참고해서 질문에 답하는 웹 기반 RAG 학습용 앱, Pinecone 벡터 DB 사용.
+- Python 3.10+
+- pipenv
+- OpenAI API Key
 
-#### 🪚 code-interpreter
-슬림버전의 챗GPT 코드 인터프리터 구축하기.
+각 프로젝트 디렉토리의 README를 참고해 개별 설치 및 실행하세요.
 
-#### 👯 tool_cailling
-다양한 함수 호출 에이전트 사용.
+## 📚 학습 흐름
+
+```
+1. intro_to_vector_dbs    →  벡터 DB와 RAG 개념 이해
+2. vectorstor-in-memory   →  FAISS 인메모리 벡터 DB 실습
+3. documentation_helper   →  실전 RAG + 멀티턴 대화
+4. code_interpreter       →  멀티 에이전트 & 도구 사용
+5. ice_breaker            →  Agent + 외부 API 통합 + Flask UI
+```
