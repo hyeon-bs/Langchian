@@ -11,7 +11,7 @@ OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
 
 if __name__ == '__main__':
     print("Ingesting...")
-    loader = TextLoader("/Users/baeksohyeon/Desktop/intro-to-vector-dbs/mediumblog1.txt")
+    loader = TextLoader("mediumblog1.txt")
     document = loader.load()
 
     print("splitting...")
